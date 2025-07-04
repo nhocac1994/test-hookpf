@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppSheet Webhook PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .status {
+            background: #e8f5e8;
+            border: 1px solid #4caf50;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .endpoint {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AppSheet Webhook PDF Service</h1>
+        
+        <div class="status">
+            <h3>✅ Service đang hoạt động</h3>
+            <p>Server Node.js đang chạy và sẵn sàng xử lý các webhook từ AppSheet.</p>
+        </div>
+
+        <h3>📋 Thông tin API:</h3>
+        <div class="endpoint">
+            <strong>Webhook Endpoint:</strong> /webhook
+        </div>
+        <div class="endpoint">
+            <strong>Method:</strong> POST
+        </div>
+        <div class="endpoint">
+            <strong>Content-Type:</strong> application/json
+        </div>
+
+        <h3>🔧 Cách sử dụng:</h3>
+        <ol>
+            <li>Gửi POST request đến <code>/webhook</code></li>
+            <li>Include JSON data từ AppSheet</li>
+            <li>Server sẽ tạo PDF và trả về response</li>
+        </ol>
+
+        <h3>📝 Lưu ý:</h3>
+        <p>Đây là một server-side application. Để test API, bạn cần sử dụng công cụ như Postman hoặc curl.</p>
+    </div>
+</body>
+</html> 

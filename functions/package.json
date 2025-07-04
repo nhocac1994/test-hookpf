@@ -1,0 +1,9 @@
+{
+  "name": "appsheet-webhook-pdf-functions",
+  "version": "1.0.0",
+  "description": "Netlify Functions for AppSheet Webhook PDF",
+  "main": "index.js",
+  "dependencies": {
+    "pdfmake": "^0.2.20"
+  }
+} 

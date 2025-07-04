@@ -1,0 +1,24 @@
+[build]
+  publish = "public"
+  command = "npm install"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/webhook"
+  to = "/.netlify/functions/index.js"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/index.js"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  directory = "functions" 
